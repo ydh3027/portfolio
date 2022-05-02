@@ -1,0 +1,88 @@
+@charset "utf-8";
+  /*tabcont - 일정공간안에서 탭메뉴 클릭시 해당 콘텐츠가 보이는 영역*/
+ 
+  #work{
+    height: 900px;
+  }
+  #tab_con01{
+    width: 1200px;height: 680px;
+    margin: 0px auto;
+    position: relative;
+    left: -10px;
+    background-image: url(../images/neocolor.png);
+    background-repeat: no-repeat;
+  }
+  #work > h3{
+    text-align: center;
+    padding: 20px 0px;
+  }
+  #tab_con01 ul{
+    display: flex;
+  }
+  #tab_con01 ul > li{
+    width: 25%;height: 40px;
+    text-align: center;
+  }
+  #tab_con01 ul > li > a{
+    display: block;
+    line-height: 40px;
+    font-size: 18px;
+    background: #ccc;
+  }
+ .pb01 dl{
+    float: left;
+    position: absolute;top: 200px;
+  }
+  .pb01 dl > dt{
+    color: #fff;
+    font-family: '나눔고딕';
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0px 10px 10px;
+    background: rgb(54,131,247);
+    width: 130px;
+    float: left;
+    clear: left;/*다음줄에 제목,내용이 내려가도록*/
+    text-indent: 4px;
+    margin-left: 10px;
+    margin-top: 4px;
+    text-align: left;
+  }
+  .pb01 dl > dd{
+    width: 300px;
+    padding: 10px 0px 10px 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    float: left;
+    color: #000;
+    background:none;
+    font-family: '나눔고딕';
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+  .pb01 dl > dd > a{
+    font-family: '나눔고딕';
+    font-size: 14px;
+    font-weight: bold;
+    background: none !important;
+    color: #333 !important;
+  }
+  .pb01 dt, .pb dd{
+    padding:2px 0px;
+  }
+  .color01{color: #49443f;}
+  .color02{color: #059c92;}
+  .color03{color: #fadc71;}
+  .color04{color: #148e3c;}
+  .color05{color: #055fa4;}
+  .color06{color: #88c8d5;}
+  .color07{color: #de1983;}
+  .color08{color: #486195;}
+  .color09{color: #ff83b5;}
+  .color10{color: #0dcbaa;}
+  .color11{color: #5079ed;}
+  .color12{color: #9f9180;}
+  

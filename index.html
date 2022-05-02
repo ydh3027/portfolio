@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원페이지 스크롤레이아웃(세로) - 스티키(stiky) 내비게이션 포함</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+  <!-- 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- 스크롤 레이아웃 서식 -->
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <link href="./css/gallery.css" rel="stylesheet" type="text/css">
+  <link href="./css/publishing.css" rel="stylesheet" type="text/css">
+  <link href="./css/work.css" rel="stylesheet" type="text/css">
+  <link href="./css/contact.css" rel="stylesheet" type="text/css">
+
+  <!-- 접두사 자동으로 붙여주는 소스 -->
+  <script src="script/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="./script/layout.js"></script>
+  <script src="./script/gallery.js"></script>
+  <script src="./script/publishing.js"></script>
+
+</head>
+<body>
+  <div id="notice">
+    <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었으며,<br>
+    사용된 이미지는 따로 출처가 있음을 밝힙니다.<br>해상도 1920에 최적화 되었습니다.</p>
+    <a href="notice.html" title="닫기"> CLOSE </a>
+</div>
+  <div id="wrap">
+    <!-- 첫페이지  -->
+    <header class="intro">
+      <div class="header_inner">
+        <div class="title">
+          <h1><small>Project</small>
+            portfolio
+          </h1>
+          
+          <p>UI/UX DESIGN, PUBLISHING </p>
+        </div>
+        <span><i class="fas fa-mouse"></i><br>Scroll</span>
+      </div>
+    </header>
+
+    <!-- 스티키 내비게이션  -->
+    <nav class="gnb">
+      <div class="n_inner">
+        <ul>
+          <li><a href="gg01.html" title="profile">profile</a></li>
+          <li><a href="gg02.html" title="ui/ux design" >ui/ux design</a></li>
+          <li><a href="gg03.html" title="publishing">publishing</a></li>
+          <li><a href="gg04.html" title="work">work</a></li>
+          <li><a href="gg05.html" title="contact us">contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 -->
+    <main>
+      <section>
+        <h2>content</h2>
+        <!-- profile -->
+        <article id="profile">
+          <h3>profile</h3>
+          <div class="photo01"><img src="./images/01.png" alt="이미지01"></div>
+          <div class="info01"><img src="./images/02.png" alt="이미지02"></div>
+          <div class="info02"><img src="./images/03.png" alt="이미지03"></div>
+          <div class="info03"><img src="./images/04.png" alt="이미지04"></div>
+
+        </article>
+
+        <!-- design -->
+        <article id="design">
+          <h3>design</h3>
+          <nav class="g_gnb">
+            <ul>
+              <li class="li_w"><a href="g01.html" title="전체보기">전체보기</a></li>
+              <li class="li_w"><a href="g02.html" title="프로젝트">프로젝트</a></li>
+              <li class="li_w"><a href="g03.html" title="설계">설계</a></li>
+              <li class="li_w"><a href="g04.html" title="디자인">디자인</a></li>
+              <li class="li_w"><a href="g05.html" title="개발">개발</a></li>
+            </ul>
+          </nav>
+          <ul class="g_list">
+            <li class="total project">
+              <a href="d01.html" title="계획">
+                <img src="./images/img1.png" alt="계획">
+                <p class="caption">페르소나</p>
+              </a>
+            </li>
+            <li class="total design">
+              <a href="d02.html" title="디자인">
+                <img src="./images/img2.png" alt="디자인">
+                <p class="caption">로고시안</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="d03.html" title="설계">
+                <img src="./images/img3.png" alt="설계">
+                <p class="caption">나인패치</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="d04.html" title="설계">
+                <img src="./images/img4.png" alt="설계">
+                <p class="caption">스토리보드</p>
+              </a>
+            </li>
+            <li class="total project">
+              <a href="d05.html" title="계획">
+                <img src="./images/img5.png" alt="계획">
+                <p class="caption">무드보드</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d06.html" title="개발">
+                <img src="./images/img6.png" alt="개발">
+                <p class="caption">웹표준검사</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="d07.html" title="설계">
+                <img src="./images/img7.png" alt="설계">
+                <p class="caption">스타일가이드</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="08.html" title="개발">
+                <img src="./images/img8.png" alt="개발">
+                <p class="caption">간트챠트</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d09.html" title="개발">
+                <img src="./images/img9.png" alt="개발">
+                <p class="caption">모바일앱</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d10.html" title="개발">
+                <img src="./images/img10.png" alt="개발">
+                <p class="caption">코드오류수정</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d11.html" title="개발">
+                <img src="./images/img11.png" alt="개발">
+                <p class="caption">적응형앱</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="d12.html" title="설계">
+                <img src="./images/img12.png" alt="설계">
+                <p class="caption">정보구조</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d13.html" title="개발">
+                <img src="./images/img13.png" alt="개발">
+                <p class="caption">크로스브라우저</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d14.html" title="개발">
+                <img src="./images/img14.png" alt="개발">
+                <p class="caption">테스트시트지</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="d15.html" title="설계">
+                <img src="./images/img15.png" alt="설계">
+                <p class="caption">워크플로우</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="d16.html" title="개발">
+                <img src="./images/img16.png" alt="개발">
+                <p class="caption">반응형앱</p>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <!-- publishing -->
+        <article id='publishing'>
+          <h3>publishing</h3>
+          <div id = "tab_con">
+            <ul>
+              <li>
+                <a href="01.html" title="자유주제">아트랑</a>
+                <div class="con c01 pb">
+                  <dl>
+                    <dt> <i class = "fas fa-caret-right"></i> 프로젝트명</dt><dd>아트랑</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 레이아웃</dt><dd>적응형웹</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 해상도</dt><dd>pc 1240px, tablet 768px, mobile 480px</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 색상</dt><dd><i class="fas fa-square-full color01"></i>#49443f <i class="fas fa-square-full color02"></i>#059c92 <i class="fas fa-square-full color03"></i>#fadc71</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 키워드</dt><dd>모던한, 현대적인, 심플한</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 개발언어</dt><dd>HTML5, CSS3, javascript, jQuery</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> URL주소</dt><dd><a href="http://chaos1030.dothome.co.kr/art/index.html" title="아트랑">http://chaos1030.dothome.co.kr/art/index.html</a></dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 소개</dt><dd><a href="e01.html" title="소개1">소비자가 쉽게 인쇄를 의뢰하고 관리하는 웹(앱)</a></dd>
+                  </dl>
+                </div>
+              </li>
+              <li>
+                <a href="02.html" title="여행">설악케이블카</a>
+                <div class="con c02 pb">
+                  <dl>
+                    <dt> <i class = "fas fa-caret-right"></i> 프로젝트명</dt><dd>설악케이블카</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 레이아웃</dt><dd>모바일앱</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 해상도</dt><dd>mobile 480px</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 색상</dt><dd><i class="fas fa-square-full color04"></i>#148e3c <i class="fas fa-square-full color05"></i>#055fa4 <i class="fas fa-square-full color06"></i>#88c8d5</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 키워드</dt><dd>자연의, 경쾌한, 토속적인</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 개발언어</dt><dd>HTML5, CSS3, javascript, jQuery</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> URL주소</dt><dd><a href="http://chaos1030.dothome.co.kr/s_m/index.html" title="설악케이블카">http://chaos1030.dothome.co.kr/s_m/index.html</a></dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 소개</dt><dd><a href="e02.html" title="소개2">여행자에게 여행정보를 제공하는 여행가이드앱</a></dd>
+                  </dl>
+                </div>
+              </li>
+              <li>
+                <a href="03.html" title="식음료">베스킨라빈스</a>
+                <div class="con c03 pb">
+                  <dl>
+                    <dt> <i class = "fas fa-caret-right"></i> 프로젝트명</dt><dd>베스킨라빈스</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 레이아웃</dt><dd>반응형웹</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 해상도</dt><dd>pc 1240px, tablet 768px, mobile 480px</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 색상</dt><dd><i class="fas fa-square-full color07"></i>#de1983 <i class="fas fa-square-full color08"></i>#486195 <i class="fas fa-square-full color09"></i>#ff83b5</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 키워드</dt><dd>귀여운, 동적인,경쾌한</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 개발언어</dt><dd>HTML5, CSS3, javascript, jQuery</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> URL주소</dt><dd><a href="http://chaos1030.dothome.co.kr/b_r/index02.html" title="베스킨라빈스">http://chaos1030.dothome.co.kr/b_r/index02.html</a></dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 소개</dt><dd><a href="e03.html" title="소개3">아이스크림,음료를 편리하게 주문하는 웹(앱)</a></dd>
+                  </dl>
+                </div>
+              </li>
+              <li>
+                <a href="04.html" title="뷰티">비오페이스</a>
+                <div class="con c04 pb">
+                  <dl>
+                    <dt> <i class = "fas fa-caret-right"></i> 프로젝트명</dt><dd>비오페이스</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 레이아웃</dt><dd>반응형웹</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 해상도</dt><dd>pc 1240px, tablet 768px, mobile 480px</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 색상</dt><dd><i class="fas fa-square-full color10"></i>#0dcbaa <i class="fas fa-square-full color11"></i>#5079ed <i class="fas fa-square-full color12"></i>#9f9180</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 키워드</dt><dd>모던한,현대적인,깨끗한</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 개발언어</dt><dd>HTML5, CSS3, javascript, jQuery</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> URL주소</dt><dd><a href="http://chaos1030.dothome.co.kr/b_f/index01.html" title="비오페이스">http://chaos1030.dothome.co.kr/b_f/index01.html</a></dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 소개</dt><dd><a href="e04.html" title="소개4">피부미용을 관리해주는 웹(앱)</a></dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- work -->
+        <article id='work'>
+          <h3>카페24쇼핑몰</h3>
+          <div id = "tab_con01">
+            <ul>
+              <li>
+                <a href="05.html" title="네오컬러">네오컬러</a>
+                <div class=" c05 pb01">
+                  <dl>
+                    <dt> <i class = "fas fa-caret-right"></i> 프로젝트명</dt><dd>네오컬러</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 레이아웃</dt><dd>적응형웹</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 해상도</dt><dd>pc 1114px, pc 1290px, mobile 480px</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 색상</dt><dd><i class="fas fa-square-full color05"></i>#055fa4 <i class="fas fa-square-full color02"></i>#059c92 <i class="fas fa-square-full color03"></i>#fadc71</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 키워드</dt><dd>모던한, 현대적인, 심플한</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 개발언어</dt><dd>HTML5, CSS3, javascript, jQuery</dd>
+                    <dt> <i class = "fas fa-caret-right"></i> URL주소</dt><dd><a href="http://neocolor.co.kr" title="url주소">http://neocolor.co.kr</a></dd>
+                    <dt> <i class = "fas fa-caret-right"></i> 소개</dt><dd><a href="06.html" title="소개">소비자가 쉽게 인쇄를 의뢰하고 <br><br> 관리하는 웹(앱)</a></dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- contact us -->
+        <article id="contact">
+          <h3>contact</h3>
+          <form name="email" method="post" action="./mail/contact_me.php">
+            <fieldset>
+              <legend>이메일 폼</legend>
+              <div class="mail_box">
+                <div class="field">
+                  <label for = "name">Name : </label>
+                  <input type="text" name="name" id="name" placeholder="이름을 입력하세요" required>
+                </div>
+
+                <div class="field">
+                  <label for = "email">Email : </label>
+                  <input type="email" name="email" id="email" placeholder="이메일 주소를 입력하세요" required>
+                </div>
+
+                <div class="field">
+                  <label for = "message"></label>
+                  <textarea name="message" id="message" rows="5" required></textarea>
+                </div>
+                
+                <!--전송하기 버튼-->
+                <ul class="action">
+                  <li><input type="submit" value="send Massage"></li>
+                </ul>
+              </div>
+            </fieldset>
+          </form>
+          <div class="sns">
+            <h3>introduction</h3>
+            <p>디자인 실무 경험의 노하우와 <br>고객과의 약속을 소중히 여기는 디자이너로서<br> 고객에게 보다
+              감각적인 홈페이지로 다가갈 수 있도록 <br>노력하겠습니다.
+            </p>
+            <ul>
+              
+              <li><a href="https://www.instagram.com/" title="인스타그램">
+                <i class="fab fa-instagram"></i></a>
+              </li>
+              <li><a href="https://www.kakaocorp.com/" title="카카오">
+                <i class="fas fa-comment"></i></a>
+              </li>
+              <li><a href="https://www.pinterest.co.kr/" title="핀터레스트">
+                <i class="fab fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- 푸터영역 -->
+      <footer>
+        <address>Copyright&copy; 2022 leeminha Portfolio allrights reserved.</address>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

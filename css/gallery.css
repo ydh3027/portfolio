@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+#design{
+  width:1240px;   /* 1200/4 = 300px = 25%   */
+  margin:0px auto;
+  background: #fff;
+}
+#design > h3{
+  text-align:center;
+  margin-bottom:20px;
+}
+#design > ul{
+  /* display:grid; */
+  padding:20px;
+  /* grid-gap:0px; */
+  /* grid-template-columns: repeat(4, auto);
+  grid-template-rows:repeat(3, 190px); */
+  display:flex;
+  flex-wrap:wrap;
+}
+#design > ul > li{
+  position:relative; /* caption의 부모요소에 기준을 설정함 */
+  overflow:hidden;
+  width:25%;
+  height:160px;
+}
+#design > ul > li img{
+  width:100%;
+  transition:0.3s;
+  filter: grayscale(0);
+}
+#design > ul > li:hover img{
+  opacity:0.8;
+  transform:scale(1.1);  
+  filter: grayscale(1);
+}
+.caption{
+  background:rgba(0,0,0,.8);
+  color:#fff;
+  font-size:14px;
+  position:absolute;
+  width:100%;
+  bottom:-40px;left:0px;
+  line-height:40px;
+  text-indent:10px;
+}
+
+/* 모달서식 */
+.modal{
+  width:100%;height:100%;
+  background:rgba(0,0,0,.8);
+  position:fixed;top:0px;left:0px;
+  text-align:center;
+  z-index:99999;
+}
+.modal div{
+  max-width:600px;
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%, -50%);
+}
+.modal img{width: 100%;}
+.modal a{
+  color:#fff;
+  font-size:30px;
+  position:fixed;right:3%;top:2%;
+}
+.modal h3{
+  color:#fff;
+  text-align:center;
+  font-size: 16px;
+  line-height: 50px;
+}
+.modal i.fa-times{transform: translateX(50px);}
+.modal i.fa-angle-left,.modal i.fa-angle-right{
+  position: absolute;color: #fff;
+  font-size: 40px;top: 50%;
+  cursor: pointer;
+}
+.modal i.fa-angle-left{left: -40px;}
+.modal i.fa-angle-right{right: -40px;}
+
+/* navigation */
+.g_gnb{
+  /* width:1240px; */
+  height:50px;
+  border-bottom:3px solid #000;
+}
+.g_gnb > ul{
+  display:flex;
+  justify-content:center;
+  
+}
+.g_gnb > ul > li{
+  margin:0px 10px;
+  
+}
+.g_gnb > ul > li > a{
+  font-size:14px;
+  background:#000;
+  color:#fff;
+  padding:4px 10px 5px 10px;
+  border-radius:0px;
+  line-height:40px;
+  text-transform:uppercase;
+ 
+}
+.li_w{width: 80px; height: 40px; 
+  background: #000;
+  text-align: center;}
+
+.g_act{
+  background:#000;
+  color: aqua !important;
+  width: 80px;height: 40px;
+  text-align: center;
+}

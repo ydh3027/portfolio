@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+a{
+  text-decoration:none;
+  color:#333;
+  font-size:12px;
+}
+body{
+  font-family:'맑은 고딕', arial, sans-serif;
+  font-size:12px;
+  color:#333;
+}
+
+/* 저작권 팝업창 */
+#notice{
+  width: 154px;
+  height: 97px;
+  background: #fff;
+  color: #064772;
+  position: absolute;
+  top: 87px;
+  right: 100px;
+  border-radius: 84% 44% 66% 56% / 46% 52% 60% 76%;
+  z-index: 999;
+  padding: 38px;
+}
+
+#notice a{
+  background: #fff;
+  color:#064772;
+  padding:4px 8px;
+  position:absolute;
+  border-radius: 16px;
+  bottom: -33px;
+  left: 90px;
+}
+#wrap{
+  width:100%;
+}
+header{
+  /*background:#ffa700;*/
+  height:94vh; /* vertical height */
+  background-image:url('../images/923472-1.png');
+  background-size:100%;
+}
+.header_inner{
+  width:1240px;height:100%;
+  margin:0px auto;
+  position:relative;
+}
+.header_inner .title{
+  width:1000px;height:220px;
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  color:#fff;
+  animation: ani_title 10s infinite;
+}
+@keyframes ani_title{
+  0%{top: 50%;}
+  50%{top: 45%;}
+  100%{top: 50%;}
+}
+
+.title > h1 > small{
+  font-size:30px;
+  display:block;
+  text-shadow:none;
+  line-height:60px;
+}
+.title > h1 {
+  font-family: 'Gugi';
+  font-size:120px;
+  font-weight:bold;
+  text-shadow:0px 5px 4px #000;
+  text-transform:uppercase;
+  position:relative;
+}
+
+.header_inner .title p{
+  font-size:20px;
+  line-height:50px;
+  text-shadow:none;
+  position:relative;
+}
+.header_inner span{
+  position:absolute;
+  width:30px;
+  display:inline-block;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:30px;
+  font-size:13px;
+  text-align:center;
+  animation:ani infinite 3s;
+}
+.header_inner i.fas{
+  font-size:20px;
+  display:inline-block;
+ 
+}
+
+@keyframes ani{
+  0%{bottom:30px;}
+  50%{bottom:50px;}
+  100%{bottom:30px;}
+}
+
+/* gnb서식 */
+.gnb{
+  width:100%;height:50px;
+  background:rgba(0,0,0,.5);
+}
+.gnb ul{
+  display:flex;
+  height:50px;
+  justify-content:center;
+  align-items:center;
+}
+.gnb ul > li{}
+.gnb ul > li > a{
+  display:block;
+  line-height:50px;
+  color:#fff;
+  padding:0px 20px;
+  font:bold 14px/50px 'Gugi'; /* 축약법 : 굵기 크기/줄간격 글꼴 */
+  text-transform:uppercase;
+}
+.gnb ul > li > a:hover{
+  background:#0cf;
+}
+
+/* 해당하는 콘텐츠가 보이는 구간에 적용할 메뉴 서식 */
+.on{
+  /* background:#0cf !important; */
+  animation:gnb_ani infinite 1.5s;
+}
+
+@keyframes gnb_ani{
+  0%{background:#0cf}
+  50%{background:rgba(0,0,0,.8);}
+  100%{background:#0cf}
+}
+
+/* 내비게이션에 적용할 서식 */
+.act{
+  position:fixed;top:0px;left:0px;
+  z-index:9999;
+}
+
+/* content */
+main{
+  /* overflow-x:hidden; */
+}
+section{
+  width:1240px;
+  margin:0px auto;
+}
+section > h2{display:none;}
+main article{
+  width:100%;height:900px;
+  padding:100px 30px 20px 30px;
+  box-sizing: border-box;
+}
+main article:nth-child(odd){
+  /*background:#0f0;*/
+  height: 1000px;
+}
+main article:nth-child(even){background:none;}
+main article > h3{
+  font-size:24px;
+  text-transform:uppercase;
+}
+
+/*로고서식*/
+#profile{
+  position: relative;
+}
+#profile > div{
+  width: 560px;
+  height: 280px;
+  position: absolute;
+  /*display: none;*/
+  opacity: 0;
+  overflow: hidden;
+}
+
+/*원래 위치보다 약간씩 배치한다*/
+.photo01{top: 250px;}
+/*.photo01{top: 220px;}*/
+.info01{right: 0px;top: 250px;}
+/*.info01{right: 0px;top: 220px;}*/
+.info02{top: 580px;left: 30px;}
+/*.info02{top: 550px;left: 30px;}*/
+.info03{top: 580px;right: 0px;}
+/*.info03{top: 550px;right: 0px;}*/
+
+/* footer */
+footer{
+  background:#333;
+  color:#fff;
+}
+footer > address{
+  text-align:center;
+  line-height:50px;
+}
