@@ -8,7 +8,7 @@
     width: 1200px;height: 680px;
     margin: 0px auto;
     position: relative;
-    left: -10px;
+    left: -10px;top:30px;
     background-image: url(../images/neocolor.png);
     background-repeat: no-repeat;
   }
@@ -27,7 +27,9 @@
     display: block;
     line-height: 40px;
     font-size: 18px;
-    background: #ccc;
+    background: #26599c;
+    color: #fff;
+    font-family: '나눔고딕';
   }
  .pb01 dl{
     float: left;
@@ -37,7 +39,7 @@
     color: #fff;
     font-family: '나눔고딕';
     font-size: 14px;
-    font-weight: bold;
+    
     padding: 10px 0px 10px 10px;
     background: rgb(54,131,247);
     width: 130px;
@@ -59,14 +61,14 @@
     background:none;
     font-family: '나눔고딕';
     font-size: 14px;
-    font-weight: bold;
+   
     text-align: left;
     letter-spacing: -1px;
   }
   .pb01 dl > dd > a{
     font-family: '나눔고딕';
     font-size: 14px;
-    font-weight: bold;
+    
     background: none !important;
     color: #333 !important;
   }
