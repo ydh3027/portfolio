@@ -5,11 +5,29 @@
     height: 900px;
     /*border:1px solid #000;*/
   }
+  #publishing .aa{
+    position: relative; 
+    top: 30px;
+    font-size: 30px;
+    color: #4e50d5;
+  }
+  #publishing .a01{
+    left: 130px;
+  }
+  #publishing .a02{
+    left:390px;
+  }
+  #publishing .a03{
+    left: 650px;
+  }
+  #publishing .a04{
+    left: 915px;
+  }
   #tab_con{
     width: 1200px;height: 680px;
     margin: 0px auto;
     position: relative;
-    left: -10px;
+    left: -10px;top: 30px;
   }
   #publishing > h3{
     text-align: center;
@@ -27,21 +45,23 @@
     line-height: 40px;
     font-size: 18px;
     background: #ccc;
+    font-family: '나눔고딕';
+    
   }
   .t_on{
-    background: #00f !important;
+    background: #26599c !important;
     color: #fff !important;
   }
   #tab_con ul .con{
     height: 641px;position: absolute;
     width: 100%;
     bottom: 0px;left: 0px;
-    display: none;
+    /*display: none;*/
   }
-  #tab_con .c01{background-image: url(../images/art01.png);}
-  #tab_con .c02{background-image:url(../images/s_m01.png)}
-  #tab_con .c03{background-image: url(../images/b_r01.png);}
-  #tab_con .c04{background-image: url(../images/b_f01.png);}
+  .c01{background-image: url(../images/art01.png);}
+  .c02{background-image:url(../images/s_m01.png);}
+  .c03{background-image: url(../images/b_r01.png);}
+  .c04{background-image: url(../images/b_f01.png);}
   .pb dl{
     float: left;
     position: absolute;top: 200px;
@@ -50,9 +70,8 @@
     color: #fff;
     font-family: '나눔고딕';
     font-size: 14px;
-    font-weight: bold;
     padding: 10px 0px 10px 10px;
-    background: rgb(54,131,247);
+    background:  rgb(54,131,247);
     width: 130px;
     float: left;
     clear: left;/*다음줄에 제목,내용이 내려가도록*/
@@ -72,14 +91,14 @@
     background: #fff;
     font-family: '나눔고딕';
     font-size: 14px;
-    font-weight: bold;
+    
     text-align: left;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
   }
   .pb dl > dd > a{
     font-family: '나눔고딕';
     font-size: 14px;
-    font-weight: bold;
+    
     background: none !important;
     color: #333 !important;
   }
