@@ -1,5 +1,6 @@
 @charset "utf-8";
 #contact{
+  height: 800px;
   background-image: url(../img/2334277.jpg);
   background-size: cover;
   position: relative;

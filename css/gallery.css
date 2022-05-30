@@ -4,7 +4,6 @@
   width:1240px;   /* 1200/4 = 300px = 25%   */
   margin:0px auto;
   background: #fff;
-  
 }
 #design > h3{
   text-align:center;
@@ -94,7 +93,6 @@
 }
 .g_gnb > ul > li{
   margin:0px 10px;
-  
 }
 .g_gnb > ul > li > a{
   font-size:14px;
@@ -104,7 +102,6 @@
   border-radius:0px;
   line-height:40px;
   text-transform:uppercase;
- 
 }
 .li_w{width: 80px; height: 40px; 
   background: #000;

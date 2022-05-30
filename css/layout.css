@@ -99,7 +99,6 @@ header{
 .header_inner i.fas{
   font-size:20px;
   display:inline-block;
- 
 }
 
 @keyframes ani{
@@ -151,39 +150,26 @@ header{
 }
 
 /* content */
-main{
-  /* overflow-x:hidden; */
-}
 section{
   width:1240px;
   margin:0px auto;
 }
 section > h2{display:none;}
 main article{
-  width:100%;height:900px;
+  width:100%;/*height:900px;*/
   padding:100px 30px 20px 30px;
   box-sizing: border-box;
 }
-main article:nth-child(odd){
-  /*background:#0f0;*/
-  height: 1000px;
-}
-main article:nth-child(even){background:none;}
 main article > h3{
   font-size:24px;
   text-transform:uppercase;
 }
 
-/*로고서식*/
-#profile{
-  position: relative;
-  
-}
+/*profile 서식*/
 #profile .pr{
-  margin-top: 30px;
   width: 100%;
-  height: 600px;
-  background: #064772;
+  height: 675px;
+ 
 }
 /*#profile > div{
   width: 560px;
